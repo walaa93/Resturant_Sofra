@@ -1,0 +1,325 @@
+/*---------------
+Fonts
+----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+/*---------------
+Global
+----------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/*Start Navbar*/
+.navbar{
+    background-color: #ececec !important;
+}
+.navbar .row{
+    width: 100%;
+}
+.navbar img{
+    width: 35%;
+}
+.navbar i{
+    color: #ec3454;
+    font-size: 30px;
+    margin: 20px 15px;
+
+}
+.navbar .fa-shopping-cart{
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar .fa-user-circle{
+    margin-right: 0;
+}
+.dropdown-menu i{
+    color: #000;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 10px;
+}
+.dropdown-menu .last-link{
+    padding-bottom: 30px;
+}
+.navbar input{
+    background-color: #f3f3f3;
+    outline: none;
+    border: none;
+
+}
+.navbar .custom-form{
+    position: relative;
+}
+.navbar .custom-form input{
+    width: 100%;
+}
+.navbar .custom-form i{
+    position: absolute;
+    font-size: 30px;
+    display: block;
+    left: 14px;
+    color: #ec3454;
+}
+.navbar-toggler {
+    background-color: none;
+    border: none; 
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: none; 
+   
+}
+.navbar .dropdown-item{
+    margin-top: 10px;
+}
+.navbar-expand-lg .navbar-toggler:focus{
+    border: none;
+    outline: none;
+}
+/*End Navbar*/
+/*Start Heading*/
+.heading{
+    background: url('../images/rest-bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+.heading .heading-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+}
+.heading .rate{
+    text-align: center!important;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 60px;
+    margin-top: 40px;
+    width: 85%;
+    margin: 80px auto 0px;
+    font-size: 30px;
+    padding-top: 6px;
+}
+.heading .rate i:nth-of-type(1) ,.heading .rate i:nth-of-type(2),
+.heading .rate i:nth-of-type(3){
+    color: #ff4057;
+}
+.heading .rate i:nth-of-type(4) ,.heading .rate i:nth-of-type(5){
+    color: #240041;
+}
+/*End Heading*/
+/*Start Food*/
+.food{
+    height: auto;
+    background: url('../images/favor-bg.png') no-repeat center ;
+    background-size: cover;
+    /* padding-top: 30px; */
+    padding-bottom: 80px;
+}
+.food .header{
+    text-align: center !important;
+}
+.food .header h1{
+    color: #240041;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.header a{
+    display: inline-block;
+    margin: 50px auto;
+    color: #fff;
+    background: rgb(232,49,83);
+    background: linear-gradient(180deg, rgba(232,49,83,1) 0%, rgba(198,31,79,1) 50%, rgba(166,13,74,1) 100%); 
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 35%;
+    border-radius: 30px;
+    height: 70px;
+    line-height: 2.5;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.food .card{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 23px;
+    position: relative;
+}
+.card .card-body{
+    text-align: center !important;
+}
+.card .card-body p{
+    color: #ff4057;
+}
+.card .card-body p.card-text{
+    font-size: 23px;
+    font-weight: bold;
+}
+.card .card-body span{
+    display: inline-block;
+    color: #d6d6d6;
+    margin-bottom: 20px;
+}
+.card .price{
+    text-align: right !important;
+    margin-right: 10px;
+}
+.card .price img{
+    max-width: 24px;
+    margin-left: 5px;
+}
+.card .close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000000;
+    text-align: center !important;
+}
+.card .close i{
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+}
+.card-body a{
+    display: block;
+    margin: 20px auto 0;
+    max-width:200px;
+    height: 48px;
+    border-radius: 15px;
+    background: url('../images/btn-card.png') no-repeat center;
+    font-size: 19px;
+    color: #fff;
+    line-height: 2.5;
+    text-decoration: none;
+}
+.card .custom-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*End Food*/
+/*Start Footer*/
+.footer{
+    background: url('../images/footerbg.png') no-repeat center;
+    background-size: cover;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: #fff;
+}
+.info-footer{
+    padding-top: 20px;
+}
+.footer h4{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.footer h4 img{
+    max-width: 30px;
+    margin-left: 6px;
+}
+.footer p{
+    width: 75%;
+    line-height: 2;
+}
+.footer .links{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.footer .links i{
+    color: #fff;
+}
+.footer .links a:nth-of-type(even){
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.footer .custom-img{
+    text-align: left !important;
+}
+.footer .custom-img img{
+    max-width: 50%;
+    margin-top: 20px;
+}
+
+
+/*End Footer*/
+/*Start Responsive*/
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-toggler {
+        display: block;
+        float: left;
+    }
+    .navbar-expand-lg .navbar-toggler i{
+        margin-left:0 ;
+        margin-bottom: 25px;
+        margin-top:25px ;
+       
+    }
+    .footer .custom-img{
+        text-align: left !important;
+    }
+    
+}
+@media (max-width: 992px){
+    .navbar img{
+        max-width: 100%;
+    }
+    .footer p{
+        width: 90%;
+    }
+    .footer .custom-img{
+        text-align: right !important;
+    }
+    .footer .custom-img img{
+        max-width: 50%;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 787px){
+    .header a{
+        width: 50%;
+        font-size: 30px;
+    }
+}
+@media (max-width: 575px){
+    .heading .rate{
+        width: 100%;
+    }
+    .header a{
+        width: 55%;
+        font-size: 20px;
+        line-height: 3.3;
+    }
+}
+
+
+
+
+
+
+/*End Responsive*/
